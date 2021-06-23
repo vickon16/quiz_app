@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App</title>
+
+  <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+  <!-- Start Quiz button -->
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+    <div class="info_title">
+      <span>Some Rules of the Quiz &nbsp;<i class="fas fa-book"></i></span>
+    </div>
+
+    <div class="info_list">
+      <div class="info">1. You have only <span>15 seconds</span> for each questions.</div>
+      <div class="info">2. You cannot reselect your answers once it has already been selected.</div>
+      <div class="info">3. You cannot select any answer once your tiem is up.</div>
+      <div class="info">4. You cannot quit the quiz when you have already began.</div>
+      <div class="info">5. You will get points in accordance to your correct answers.</div>
+    </div>
+
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+
+  <!-- quiz box -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">English WAEC 2013 Past Questions</div>
+      <div class="timer">
+        <div class="timer_text">Time Left</div>
+        <div class="timer_sec"></div>
+      </div>
+
+      <!-- timer line -->
+      <div class="timer_line"></div>
+    </header>
+
+    <section>
+      <div class="que_text">
+        <span>The company is run by a ___ of directors.</span>
+      </div>
+
+      <p class="answer_option">Answer option</p>
+
+      <div class="option_list">
+        <!-- <div class="option">
+          <span>A</span>
+          <div class="option_div">
+            <span>board</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+        </div>
+
+        <div class="option">
+          <span>B</span>
+          <div class="option_div">
+            <span>trustee</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+        </div>
+
+        <div class="option">
+          <span>C</span>
+          <div class="option_div">
+            <span>brood</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+        </div>
+
+        <div class="option">
+          <span>D</span>
+          <div class="option_div">
+            <span>staff</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Quiz Box footer -->
+    <footer>
+      <div class="total_que">
+        <!-- <span><p>2</p>of<p>5</p> Questions</span> -->
+      </div>
+
+      <div class="winLoss">
+        <span><i class="fas fa-check"></i><span class="correct">0</span></span>
+        <span><i class="fas fa-times"></i><span class="wrong">0</span></span>
+      </div>
+
+      <div class="footer_buttons">
+        <button class="skip_btn">Skip</button>
+        <button class="next_btn">Next</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- result box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+
+    <div class="completed_text">
+     <span>Congratulations!!!.</span> You've completed the Quiz
+    </div>
+
+    <div class="score_text">
+      <!-- <span>You got <p>2</p> out of <p>5</p> Questions</span> -->
+    </div>
+
+    <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+    </div>
+  </div>
+
+  
+  
+  <script type="text/javascript" src="./questions.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+	
+</body>
+</html>
