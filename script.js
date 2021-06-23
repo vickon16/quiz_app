@@ -39,6 +39,7 @@ continueBtn.addEventListener("click", () => {
     quesCounter(queNumber);
     startTimer(timeValue);
     startTimerLine(0);
+    skipButton.style.display = "inline-block";
   }, 1000)
 })
 
